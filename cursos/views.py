@@ -11,3 +11,6 @@ def listadoDeCursos( request ):
     }
     return render( request, 'cursos/listadoCursos.html', contexto )
 
+def formularioContacto( request ):
+    return render( request, 'cursos/formularioContacto.html' )
+

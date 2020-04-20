@@ -1,0 +1,16 @@
+{% extends 'cursos/base.html' %}
+
+{% block contenido %}
+    <form>
+        <div class="form-group">
+            <label for="Nombre">Nombre:</label>
+            <input type="email" class="form-control" id="Nombre">
+        </div>
+        <div class="form-group">
+            <label for="Correo">Correo electrónico:</label>
+            <input type="email" class="form-control" id="Correo" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Mantendrémos tu privacidad y nunca compartiremos tu correo con nadie.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+{% endblock contenido %}

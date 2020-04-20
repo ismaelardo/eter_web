@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 def home( request ):
-    render( request, 'eter/index.html' )
+    HttpResponse("Hola")
+    #render( request, 'eter/index.html' )

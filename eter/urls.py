@@ -22,5 +22,5 @@ app_name = 'eter'
 urlpatterns = [
     path( 'admin/', admin.site.urls),
     path( 'cursos/', include('cursos.urls') ),
-    path('', views.home, name='home'),
+    path('', views.home, name = 'home'),
 ]
