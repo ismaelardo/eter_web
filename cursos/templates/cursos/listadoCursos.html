@@ -1,5 +1,11 @@
 {% extends 'cursos/base.html' %}
 
 {% block contenido %}
-    <h2>Hola mundo</h2>
-{% endblock %}
+    {% for taller in talleres %}
+        <div>
+            <h1> {{ taller.titulo }} </h1>
+            <p> {{ taller.descripcion }} </p>
+            <small> {{ taller.fecha_inicio }} </small>
+        </div>
+    {% endfor %}
+{% endblock contenido %}

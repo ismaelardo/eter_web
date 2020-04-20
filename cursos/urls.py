@@ -4,6 +4,6 @@ from . import views
 app_name = 'cursos'
 
 urlpatterns = [
-	# ej: /canvan/ 
+	# ej: /cursos/ 
     path ( '', views.listadoDeCursos, name='lista-cursos' ),
 ]
