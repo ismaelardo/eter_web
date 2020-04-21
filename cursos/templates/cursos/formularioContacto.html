@@ -4,15 +4,20 @@
     <div class="row">
         <div class="col"></div>
         <div class="col-6">
-            <form>
+            <form method="POST">
+                {% csrf_token %}
                 <div class="form-group">
                     <label for="Nombre">Nombre:</label>
-                    <input type="email" class="form-control" id="Nombre">
+                    <input type="text" class="form-control" id="Nombre" name="Nombre">
                 </div>
                 <div class="form-group">
                     <label for="Correo">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="Correo" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="Correo" aria-describedby="emailHelp" name="Email">
                     <small id="emailHelp" class="form-text text-muted">Mantendrémos tu privacidad y nunca compartiremos tu correo con nadie.</small>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Mensaje:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="Mensaje"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
