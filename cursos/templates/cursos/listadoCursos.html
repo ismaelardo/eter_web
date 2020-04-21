@@ -2,10 +2,12 @@
 
 {% block contenido %}
     {% for taller in talleres %}
-        <div class="tarjeta">
+    
+        <div class="tarjeta" id="miDiv">
             <h1> {{ taller.titulo }} </h1>
             <p> {{ taller.descripcion }} </p>
             <small> Empieza el {{ taller.fecha_inicio }} </small>
         </div>
+
     {% endfor %}
 {% endblock contenido %}

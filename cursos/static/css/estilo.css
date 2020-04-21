@@ -5,3 +5,29 @@
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
+
+
+.carousel-inner{
+	height: 60vh;
+	background-color: rgba(37, 37, 35, 0.2);
+}
+
+.carousel-item{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-item a{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-item a img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.carousel-caption{
+	background-color: rgba(37, 37, 35, 0.2);
+}

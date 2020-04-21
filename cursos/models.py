@@ -9,3 +9,12 @@ class Taller( models.Model ):
 
     def __str__( self ):
         return self.titulo
+
+
+class Noticia( models.Model ):
+    titulo = models.CharField( max_length = 200 )
+    imagen = models.ImageField( upload_to='img_slider' )
+    enlace = models.URLField()
+
+    def __str__( self ):
+        return self.titulo
